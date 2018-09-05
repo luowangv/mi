@@ -6,6 +6,7 @@ a{
 }
 body{
 	font-family:微软雅黑；
+	color:#333;
 	
 
 }
@@ -53,7 +54,7 @@ ul{
 }
 #header ul>li>a{
 	color:#B0B0B0;
-	padding: 10px;
+	padding: 6px;
 }
 #header #user-action{
 	width: 288px;
@@ -125,3 +126,97 @@ ul{
 #header #user-action #shopcar:hover #car-info{
 	height: 100px;
 }
+#nav{
+	width: 1226px;
+	height: 100px;
+	/*background: blue;*/
+	margin: 0 auto;
+	display: flex;
+	align-items: center;
+	position: relative;
+}
+#nav #logo{
+	width: 55px;
+	height: 55px;
+	background: #FF6700;
+	justify-content: center;
+	align-items: center;
+	display: flex;
+	position: absolute;
+	left: 6px;
+}
+#nav #logo img{
+	display: block;
+}
+#nav #nav-menu{
+	/*width: 600px;*/
+	height: 100%;
+	/*background:green;*/
+	margin-left:188px; 
+	position: relative;
+	right: -40px;
+
+
+}
+#nav #nav-menu>ul{
+	display: flex;
+	align-items: center;
+	/*justify-content:center;*/
+	height: 100%;
+}
+#nav #nav-menu>ul>li>a{
+	/*float: left;*/
+	color: #333;
+	padding:10px; 
+}
+#nav #nav-menu>ul>li:hover>a{
+	color: #FF6700;
+
+}
+#nav #search{
+	margin-left: 50px;
+	display: block;
+	position: relative;
+	left: 66px;
+
+}
+#nav #search input[type=search]{
+	width: 245px;
+	height: 50px;
+	border: 1px solid #e0e0e0;
+	outline: none;
+}
+#nav #search form{
+	display: flex;
+}
+#nav #search{
+	margin-left: 50px;
+}
+#nav #search button {
+	width: 50px;
+	height: 50px;
+	border: 1px solid #e0e0e0;
+	outline: none;
+	background: #fff;
+	border-left: none;
+	/*text-shadow: none;*/
+	/*border: 0;*/
+	/*box-shadow: 1px 0px 0.1px 1px;*/
+}
+#nav #search button:hover{
+	background: #FF6700;
+	border:1px solid  #FF6700;
+	color: #fff;
+	/*outline:0px solid red;*/
+	/*background-color: #FF6700;*/
+	/*border:1px solid #B0B0B0;*/
+}
+#nav #search:hover input[type=search],#nav #search:hover button{
+	border-color: #808080;
+}
+#nav #search input[type=search]:focus,#nav #search input[type=search]:focus+button{
+	border-color:#FF6700; 
+}
+
+
+
