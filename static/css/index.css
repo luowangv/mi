@@ -16,6 +16,7 @@ ul{
 #header-wrap{
 	width: 100%;
 	height: 38px;
+	min-width: 1226px;
 	background: #333333;
 }
 #header{
@@ -86,6 +87,7 @@ ul{
 	background: #424242;
 	/*clear: left;*/
 	float: left;
+	z-index: 9999;
 	position: relative;
 	/*z-index:0;*//*不设还好，一设就出事，，，*/
 }
@@ -95,6 +97,7 @@ ul{
 	height: 38px;
 	width: 100%;
 	text-align: center;
+
 }
 #header #user-action #shopcar #car-logo i{
 	font-size: 12px;
@@ -117,7 +120,7 @@ ul{
 	text-align: center;
 	line-height: 100px;
 	position: absolute;
-	top: 37px;
+	top: 38px;
 	right: 0;
 	z-index:-1;
 	transition: height 0.2s linear 0.1s;
@@ -181,7 +184,7 @@ ul{
 
 }
 #nav #search input[type=search]{
-	width: 245px;
+	width: 220px;
 	height: 50px;
 	border: 1px solid #e0e0e0;
 	outline: none;
@@ -189,9 +192,7 @@ ul{
 #nav #search form{
 	display: flex;
 }
-#nav #search{
-	margin-left: 50px;
-}
+
 #nav #search button {
 	width: 50px;
 	height: 50px;
@@ -207,9 +208,9 @@ ul{
 	background: #FF6700;
 	border:1px solid  #FF6700;
 	color: #fff;
-	/*outline:0px solid red;*/
+	outline:0;
 	/*background-color: #FF6700;*/
-	/*border:1px solid #B0B0B0;*/
+	border:0;
 }
 #nav #search:hover input[type=search],#nav #search:hover button{
 	border-color: #808080;
@@ -217,6 +218,74 @@ ul{
 #nav #search input[type=search]:focus,#nav #search input[type=search]:focus+button{
 	border-color:#FF6700; 
 }
+#nav #search #datalist{
+	position: absolute;
+	width: 220px;
+	/*left: -1px;*/
+	border: 1px solid #FF6700;
+	top: 50px;	
+	border-top: none;
+	display: none;
+	padding-left: 20px;
+	box-sizing: border-box;
+}
+#nav #search #datalist>ul>li{
+	height: 30px;
+	line-height: 30px;
+	font-size: 12px;
+}
+#nav #search #datalist>ul>li>a{
+	color: #333;
+	display: block;
+	width: 100%;
+	height: 100%；
+
+}
+#nav #search #datalist>ul>li>a>.num{
+	float: right;
+	color: #B0B0B0;
+	margin-right: 20px;
+}
+#nav #search input[type=search]:focus~#datalist{
+	display: block;
+}
+#nav #search #default-phone{
+	position: absolute;
+	top: 25px;
+	height: 18px;
+	margin-top:-7.5px; 
+	line-height: 15px;
+	right: 60px;
+	/*color: #757575;*/
+	/*font-size: 12px;*/
+
+}
+#nav #search #default-phone>ul{
+	display: flex;
+}
+#nav #search #default-phone>ul>li>a{
+	font-size: 12px;
+	color: #757575;
+	padding-left:5px;
+	padding-right: 5px;
+}
+#nav #search #default-phone>ul>li{
+	margin-left: 5px;
+	background: #EEEEEE;
+
+}
+#nav #search #default-phone>ul>li>a:hover{
+	background: #FF6700;
+	color: #fff;
+	transition: all 0.2s;
+}
+#nav #search input[type=search]:focus~#default-phone{
+	display: none;
+}
+
+
+
+
 
 
 
