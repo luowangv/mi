@@ -1,11 +1,12 @@
 /*定义index首页的css样式 */
 a{
 	text-decoration: none;
-	
-
+}
+img{
+	display: block;
 }
 body{
-	font-family:微软雅黑；
+	font-family:微软雅黑;
 	color:#333;
 	
 
@@ -228,6 +229,8 @@ ul{
 	display: none;
 	padding-left: 20px;
 	box-sizing: border-box;
+	z-index: 999;
+	background: #fff;
 }
 #nav #search #datalist>ul>li{
 	height: 30px;
@@ -289,6 +292,7 @@ ul{
 	/*background: green;*/
 	left: 0;
 	top: 145px;
+	z-index: 999;
 	/*border-top: 1px solid #e0e0e0;
 	border-bottom:1px solid #e0e0e0;*/
 	overflow: hidden;
@@ -299,12 +303,14 @@ ul{
 	width: 100%;
 	position: relative;
 	height:auto;
+	z-index:99;
 }
 #nav #nav-menu>ul>li>.menu-goods-list>.list-container{
 	height: 204px;
-	width: 1226px;
+	width: 1238px;
 	/*background: pink;*/
 	margin:0 auto; 
+	background: #fff;
 }
 #nav #nav-menu>ul>li>.menu-goods-list>.list-container>ul>li{
 	/*width: 195px;*/
@@ -318,6 +324,7 @@ ul{
 #nav #nav-menu>ul>li>.menu-goods-list>.list-container>ul>li>img{
 	display: block;
 	width: 160px;
+	height: 110px;
 	margin-top: 34px;
 }
 #nav #nav-menu>ul>li>.menu-goods-list>.list-container>ul>li>.goods-info{
@@ -387,3 +394,72 @@ ul{
 
 
 
+#slider-container {
+    position: relative;
+    width: 1226px;
+    height: 460px;
+    /*background:red;*/
+    margin: 0 auto;
+    top: 7px;
+    /*z-index:-1;*/
+}
+
+#slider-container #slider img {
+    width: 1226px;
+    height: 460px;
+    /*background:red;*/
+    margin: 0 auto;
+    position: absolute;
+    /*left: 56px;*/
+}
+
+#slider-container #cate-menu {
+    width: 234px;
+    height: 460px;
+    background: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+#slider-container #cate-menu {
+    /*padding-top: 30px;*/
+    box-sizing: border-box;
+    box-sizing: content-box;
+    /* overflow: hidden;*/
+}
+
+#slider-container #cate-menu>ul>li {
+    width: 234px;
+    height: 40px;
+    line-height: 30px;
+    /*background: green;*/
+    /*margin-top:20px; */
+    position: relative;
+    /* overflow: hidden;*/
+}
+
+#slider-container #cate-menu>ul>li>a {
+
+    color: #fff;
+    font-size: 14px;
+    display: block;
+    padding-left: 30px;
+   padding-top: 5px;
+}
+
+#slider-container #cate-menu>ul {
+    /*   overflow: hidden;*/
+    padding-top: 30px;
+}
+
+#slider-container #cate-menu>ul>li:hover {
+
+    background: #FF6700;
+}
+
+#slider-container #cate-menu>ul>li>a>span {
+    float: right;
+    margin-right: 26px;
+    color: #AEB3B7;
+}
