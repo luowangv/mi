@@ -609,7 +609,7 @@ ul{
 	line-height: 68px;
 	font-size: 22px;
 }
-#quickly-shopping>#shopping-menu>ul{
+#quickly-shopping>#shopping-menu>.shopping-menu-list{
 	width: 230px;
 	height: 332px;
 	display: flex;
@@ -619,6 +619,18 @@ ul{
 	background:#F1EDED;
 	/*margin-top: -48px;*/
 	float: left;
+}
+#quickly-shopping>#shopping-menu>.one{
+	border-top: 1px solid #FFAC13;
+}
+#quickly-shopping>#shopping-menu>.two{
+	border-top: 1px solid #83C44E;
+}
+#quickly-shopping>#shopping-menu>.three{
+	border-top: 1px solid #2196F3;
+}
+#quickly-shopping>#shopping-menu>.four{
+	border-top: 1px solid #E53935;
 }
 #quickly-shopping>#shopping-menu>ul:nth-of-type(n+2){
 	margin-left: 19px;
@@ -647,36 +659,208 @@ ul{
 	margin-left: 42px;
 	margin-top: 0;
 }
+.advertising-the-second>a>img{
+	/*margin-top: 20px;*/
+	height:118px;
+	width: 1226px;
+	margin-left: 42px;
+	/*position: relative;*/
+	margin-top: 43px;
+	display: inline-block;
+}
 
 /*手机*/
 #phone-menu>.title-second{
 	width: 1226px;
 	height: 58px;
-	background: #fff;
+	background: #F5F5F5;
 	margin-left: 42px;
+	line-height: 52px;
 }
 #phone-menu{
 	margin-top: 41px;
 	height: 614px;
 	width: 100%;
-	background: green;
+	background: #F5F5F5;
 }
 #phone-menu>.title-second>span{
-	text-align: center;
+	/*text-align: center;*/
 	font-size: 22px;
-	margin-top: 20px;
+	/*margin-top: 20px;*/
 
 }
 #phone-menu>.title-second>a{
 	font-size: 16px;
 	float: right;
-	margin-top: 20px;
+	/*margin-top: 20px;*/
 	color: #424242;
 }
 #phone-menu>.title-second>a:hover{
 	color: #FF6700;
 }
+#phone-menu>#phone-shopping-left>a>img{
+	height: 614px;
+	width: 233px;
+	display: inline-block;
+	margin-left:42px; 
+	/*display: none;*/
+
+}
+#phone-menu>#phone-shopping-left>a{
+	/*position: absolute;*/
+	/*z-index: 1;*/
+	float: left;
+	transition: all 0.2s linear;
+}
+#phone-menu>#phone-shopping-left>a:hover{
+	/*z-index: 2;*/
+	transform: translateY(-2px);
+}
+
+#phone-menu>#phone-shopping-right>ul{
+	width: 992px;
+	height: 614px;
+	margin-left: 275px;
+	background: #F5F5F5;
+}
+#phone-menu>#phone-shopping-right>ul>li{
+	width: 234px;
+	height: 300px;
+	background: #fff;
+	float: left;
+	margin-left: 18.5px;
+	
+	
+}
+#phone-menu>#phone-shopping-right>ul>li:nth-of-type(4n+1){
+	margin-left: 0;
+}
+#phone-menu>#phone-shopping-right>ul>li:nth-last-of-type(4){
+	margin-top: 14px;
+}
+#phone-menu>#phone-shopping-right>ul>li:nth-last-of-type(3){
+	margin-top: 14px;
+}#phone-menu>#phone-shopping-right>ul>li:nth-last-of-type(2){
+	margin-top: 14px;
+}#phone-menu>#phone-shopping-right>ul>li:nth-last-of-type(1){
+	margin-top: 14px;
+}
+#phone-menu>#phone-shopping-right>ul>li>a{
+	line-height: 20px;
+}
+#phone-menu>#phone-shopping-right>ul>li>.top-title{
+	height: 20px;
+	width: 64px;
+	background: #E53935;
+	margin: 0 auto;
+	color: #FFFFFF;
+	font-size: 12px;
+	text-align: center;
+	line-height: 18px;
 
 
+}
+#phone-menu>#phone-shopping-right>ul>li>.none{
+	background: #fff;
+}
+#phone-menu>#phone-shopping-right>ul>li>a>img{
+	width: 160px;
+	height: 160px;
+	/*margin: 0 auto;*/
+	margin-left: 40px;
+	margin-top: 20px;
+}
+#phone-menu>#phone-shopping-right>ul>li>a>span>p{
+	display: block;
+	text-align: center;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
+}
+#phone-menu>#phone-shopping-right>ul>li>a>span>.phone-name{
+	font-size: 14px;
+	color: #333333;
+}
+#phone-menu>#phone-shopping-right>ul>li>a>span>.phone-discription{
+	font-size: 12px;
+	color: #B7B0B0;
+}
+#phone-menu>#phone-shopping-right>ul>li>a>.price{
+	text-decoration: none;
+	text-align: center;
+	display: block;
+	color: #FF6700;
+	font-size: 14px;
+	padding-top:10px;
 
+}
+#phone-menu>#phone-shopping-right>ul>li>a>.price>del{
+	color: #B0B0B0;
+}
+#phone-menu>#phone-shopping-right>ul>li>a>span{
+	text-align: center;
+}
+#phone-menu>#phone-shopping-right>ul>li:hover{
+	transform: translateY(-2px);
+	transition: all 0.2s linear;
+}
 
+/*家电*/
+#home-appliance{
+	height: 614px;
+	width: 100%;
+	background: red;
+	margin-top:22px;
+}
+#home-appliance>.home-appliance-header{
+	height: 58px;
+	width: 1226px;
+	background: #F5F5F5;
+	margin-left: 42px;
+}
+#home-appliance>.home-appliance-header>span{
+	float: left;
+	margin-top: 16px;
+	color: #424242;
+	font-weight: bold;
+	font-size: 22px;
+}
+#home-appliance>.home-appliance-header>ul{
+	float: right;
+	width: 280px;
+	height: 42px;
+}
+#home-appliance>.home-appliance-header>ul>li>a{
+	float: left;
+	height: 26px;
+	/*width: 32px;*/
+	margin-top: 16px;
+	margin-left:30px;
+	color: #424242;
+
+}
+#home-appliance>.home-appliance-header>ul>li>a:hover{
+	text-decoration: underline;
+	color: #FF6700;
+
+}
+#home-appliance>.home-appliance-header>ul>li>a>#table-activity{
+	float: left;
+	height: 26px;
+	width: 64px;
+}
+#home-appliance>.home-appliance-left{
+	width: 240px;
+	height: 556px;
+	background: pink;
+	margin-left: 42px;
+}
+#home-appliance>.home-appliance-left>ul>li>a>img{
+	width: 240px;
+	height: 270px;
+	display: inline-block;
+	/*margin-top: 20px;*/
+}
+#home-appliance>.home-appliance-left>ul>.second-picture>a>img{
+	margin-top: 14px;
+}
