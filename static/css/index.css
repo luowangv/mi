@@ -8,6 +8,7 @@ img{
 body{
 	font-family:微软雅黑;
 	color:#333;
+	background: #F1EDED;
 	
 
 }
@@ -63,6 +64,7 @@ ul{
 	height: 100%;
 	/*background: pink;*/
 	float: right;
+	margin-right: -40px;
 }
 
 /*#header #user-action>ul>li>a{
@@ -147,7 +149,7 @@ ul{
 	align-items: center;
 	display: flex;
 	position: absolute;
-	left: 46px;
+	margin-left: 4px;
 }
 #nav #logo img{
 	display: block;
@@ -192,6 +194,7 @@ ul{
 }
 #nav #search form{
 	display: flex;
+	margin-left: 42px;
 }
 
 #nav #search button {
@@ -400,13 +403,14 @@ ul{
 }
 
 #slider-container #slider img {
-    width: 1187px;
+    width: 1226px;
     height: 460px;
     /*background:red;*/
     margin: 0 auto;
     position: absolute;
-    margin-left: 5px;
+    margin-left: -21px;
     /*left: 56px;*/
+
 }
 
 #slider-container #cate-menu {
@@ -423,6 +427,7 @@ ul{
     box-sizing: border-box;
     box-sizing: content-box;
     /* overflow: hidden;*/
+    margin-left: -27px;
 }
 
 #slider-container #cate-menu>ul>li {
@@ -449,6 +454,8 @@ ul{
     /*   overflow: hidden;*/
     padding-top: 20px;
     /*position: absolute;*/
+    margin-left: -21px;
+    margin-left: 0px;
 }
 
 #slider-container #cate-menu>ul>li:hover {
@@ -512,7 +519,7 @@ ul{
 
 }
 #slider-container #cate-menu>ul>li>.cate-menu-list>ul:nth-of-type(1){
-	margin-top: 4px;
+	margin-top:3px;
 }
 #slider-container #cate-menu>ul>li>.cate-menu-list>ul>li>a>img{
 	width: 40px;
@@ -531,18 +538,19 @@ ul{
 
 
 #choose-menu{
-	/*position: relative;*/
+	position: relative;
 	margin-top: 18px;
-	margin-left: 42px;
+	/*margin-left: 42px;*/
+	left: 40px;
 }
 #choose-menu>ul>li{
 	float: left;
-	/*position: relative;*/
+	position: relative;
 	padding-right: 15px;
 }
 #choose-menu>ul>li>a>img{
-	width: 303px;
-	height: 167px;
+	width: 316px;
+	height: 170px;
 }
 #choose-menu>ul>li>a{
 	display: block;
@@ -552,7 +560,8 @@ ul{
 	height: 167px;
 	/*border: 1px solid red;*/
 	background: #5F5750;
-	margin-left: 3px;
+	/*margin-left: -20px;*/
+
 }
 #choose-menu>ul>li>.choose-menu-child>ul>li{
 	width: 78px;
@@ -567,8 +576,12 @@ ul{
 	text-align: center;
 	line-height: 24px;
 	position: relative;
+	margin: 0 auto;
 	
 }
+/*#choose-menu>ul>li>.choose-menu-child>ul{
+	margin-left: 0 auto;
+}*/
 #choose-menu>ul>li>.choose-menu-child>ul>li>a{
 	color: #CDCAC8;
 	margin: 2px;
@@ -586,6 +599,15 @@ ul{
 	left: 0px;
 
 }
+#choose-menu>ul>li>.choose-menu-child>ul>li::before{
+	height: 1px;
+	width: 65px;
+	background: #665E57;
+	top: 0px;
+	left:7px;
+	position: absolute;
+	content: "";
+}
 
 
 
@@ -593,13 +615,14 @@ ul{
 
 /*小米闪购*/
 #quickly-shopping{
-	width: 1184px;
+	width: 1226px;
 	height: 438px;
 	/*position: absolute;*/
 	/*background: blue;*/
 	margin-top: 208px;
 	padding-left: 42px;
 	margin-left: 42px;
+	background: #F1EDED;
 }
 #quickly-shopping>.title{
 	width: 1226px;
@@ -615,13 +638,13 @@ ul{
 	font-size: 22px;
 }
 #quickly-shopping>#shopping-menu>.shopping-menu-list{
-	width: 223px;
+	width: 230px;
 	height: 332px;
 	display: flex;
 	margin-left: -42px;
 	display: block;
 	border-top: 1px solid #E53935;
-	background:#F1EDED;
+	background:#fff;
 	/*margin-top: -48px;*/
 	float: left;
 }
@@ -647,7 +670,7 @@ ul{
 	/*margin-top: 48px;*/
 	padding-top: 60px;
 	width: 100%;
-	height: 
+	position: relative;
 }
 #quickly-shopping>#shopping-menu>ul>li>img{
 	display: inline-block;
@@ -655,19 +678,79 @@ ul{
 #quickly-shopping>#shopping-menu>ul>li>a>img{
 	display: inline-block;
 }
+#quickly-shopping>#shopping-menu>ul>li>.countdown{
+	width: 168px;
+	height: 46px;
+	margin: 12px auto 0;
+}
+#quickly-shopping>#shopping-menu>ul>li>.top-first{
+	width: 64px;
+	height: 20px;
+	background: #E53935;
+	position: absolute;
+	top: 0;
+	left: 85px;
+	line-height: 18px;
+	font-size: 12px;
+	color: #fff;
+}
 
+#quickly-shopping>#shopping-menu>ul>li>a>img{
+	width: 160px;
+	height: 160px;
+	margin-top: -20px;
+}
+#quickly-shopping>#shopping-menu>ul>li>a>.list-name>.list-shopping{
+	font-size: 14px;
+	color:#202020;
+	margin-top: -16px;
+}
+#quickly-shopping>#shopping-menu>ul>li>a>.list-name>.list-description{
+	font-size: 13px;
+	color: #ADADAD;
+	margin-top: -28px;
+
+}
+#quickly-shopping>#shopping-menu>ul>li>a>.list-price{
+	font-size: 14px;
+	color: #FF6700;
+	margin-top: -16px;
+}
+#quickly-shopping>#shopping-menu>ul>li>a>.list-price>del{
+	color: #ADADAD;
+}
+#quickly-shopping>#shopping-menu>ul>li>.countdown>div{
+	float: left;
+
+}
+#quickly-shopping>#shopping-menu>ul>li>.countdown>.box{
+	width: 46px;
+	height: 46px;
+	background:#605751;
+	color: #fff;
+	font-size: 22px;
+
+}
+#quickly-shopping>#shopping-menu>ul>li>.countdown>.dosh{
+	font-size: 22px;
+	width: 15px;
+	height:46px;
+}
 
 /*广告*/
 .advertising>a>img{
 	height:118px;
-	width: 1188px;
+	width: 1226px;
 	margin-left: 42px;
 	margin-top: 0;
+}
+.advertising-the-second{
+
 }
 .advertising-the-second>a>img{
 	/*margin-top: 20px;*/
 	height:118px;
-	width: 1183px;
+	width: 1226px;
 	margin-left: 42px;
 	/*position: relative;*/
 	margin-top: 43px;
@@ -676,10 +759,10 @@ ul{
 
 /*手机*/
 #phone-menu>.title-second{
-	width: 1188px;
+	width: 1226px;
 	height: 58px;
 	background: #F5F5F5;
-	margin-left: 42px;
+	margin-left: 40px;
 	line-height: 52px;
 }
 #phone-menu{
@@ -730,7 +813,7 @@ ul{
 	background: #F5F5F5;
 }
 #phone-menu>#phone-shopping-right>ul>li{
-	width: 223px;
+	width: 229px;
 	height: 300px;
 	background: #fff;
 	float: left;
@@ -738,9 +821,9 @@ ul{
 	
 	
 }
-#phone-menu>#phone-shopping-right>ul>li:nth-of-type(4n+1){
+/*#phone-menu>#phone-shopping-right>ul>li:nth-of-type(4n+1){
 	margin-left: 0;
-}
+}*/
 #phone-menu>#phone-shopping-right>ul>li:nth-last-of-type(4){
 	margin-top: 14px;
 }
@@ -823,7 +906,7 @@ ul{
 }
 #home-appliance>.home-appliance-header{
 	height: 58px;
-	width: 1188px;
+	width: 1226px;
 	background: #F5F5F5;
 	margin-left: 42px;
 	/*position: relative;*/
@@ -869,7 +952,7 @@ ul{
 
 }
 #home-appliance>.home-appliance-header>ul>li>.home-list>.list-content>ul>li{
-	width: 223.5px;
+	width: 234px;
 	height: 300px;
 	text-align: center;
 	line-height: 20px;
@@ -975,7 +1058,7 @@ ul{
     height: 76px;
     background: #ff6900;
     /*margin-top: -60px;*/
-    /*position: absolute;*/
+    position: absolute;
     /*top: 224px;*/
    /*自动换行问题*/
     /*line-height: 24px;*/
@@ -1051,7 +1134,7 @@ ul{
 /*为你推荐*/
 
 #recommended{
-	width: 1184px;
+	width: 1226px;
 	height: 438px;
 	/*position: absolute;*/
 	/*background: blue;*/
@@ -1061,7 +1144,7 @@ ul{
 	background: #F1EDED;
 }
 #recommended>.title{
-	width: 1188px;
+	width: 1226px;
 	height: 58px;
 	/*background: yellow;*/
 	clear: both;
@@ -1085,7 +1168,7 @@ ul{
 	transition: all .2s linear;
 }
 #recommended>#shopping-menu>.shopping-menu-list{
-	width: 223px;
+	width: 230px;
 	height: 332px;
 	display: flex;
 	margin-left: -42px;
@@ -1118,14 +1201,14 @@ ul{
 
 /*热评产品*/
 #buzz-products{
-	width: 1188px;
+	width: 1226px;
 	height: 473px;
 	background: #F5F5F5;
 	margin-left: 42px;
 	margin-top:20px;
 }
 #buzz-products>.title{
-	width: 1188px;
+	width: 1226px;
 	height: 58px;
 	background: #F5F5F5;
 	line-height: 60px;
@@ -1136,7 +1219,7 @@ ul{
 	height: 415px;
 }
 #buzz-products>.products>ul>li{
-	width: 290px;
+	width: 296px;
 	height: 415px;
 	background: #fff;
 	float: left;
@@ -1150,7 +1233,7 @@ ul{
 	margin-left: 14px;
 }
 #buzz-products>.products>ul>li>a>img{
-	width: 276px;
+	width: 296px;
 	height: 220px;
 	margin-bottom: 32px;
 }
@@ -1196,38 +1279,39 @@ ul{
 
 /*内容*/
 .shopping-content{
-	width: 1188px;
+	width: 1226px;
 	height: 478px;
 	/*position: absolute;*/
 	/*background: blue;*/
 	margin-top: 20px;
 	/*padding-left: 42px;*/
-	margin-left: 84px;
+	margin-left: 44px;
+	background:#F5F5F5;
 }
 .shopping-content>.title{
-	width: 1188px;
+	width: 1226px;
 	height: 58px;
 	/*background: yellow;*/
 	clear: both;
 	display: block;
 	position: relative;
 	/*top: 28px;*/
-	margin-left: -42px;
+	/*margin-left: -42px;*/
 	/*margin-top: 30px;*/
 	line-height: 68px;
 	font-size: 22px;
 }
 .shopping-content>#shopping-menu>.shopping-menu-list{
-	width: 280px;
+	width: 293.7px;
 	height: 420px;
 	display: flex;
-	margin-left: -42px;
+	/*margin-left: -42px;*/
 	display: block;
 	border-top: 1px solid #E53935;
-	/*background:#F1EDED;*/
+	background:#fff;
 	/*margin-top: -48px;*/
 	float: left;
-	border: 1px solid #C292C9;
+	/*border: 1px solid #C292C9;*/
 }
 .shopping-content>#shopping-menu>ul>li>.shopping-content-top{
 	font-size: 16px;
@@ -1265,6 +1349,38 @@ ul{
 .shopping-content>#shopping-menu>ul>li>img{
 	margin: 0 auto;
 }
+
+.shopping-content>#shopping-menu>ul>li>a>.button-left{
+	width: 20px;
+	height: 48px;
+	background:#fff;
+	float: left;
+}
+.shopping-content>#shopping-menu>ul>li>a>.button-right{
+	width: 20px;
+	height: 48px;
+	background: #fff;
+	float: right;
+
+}
+.shopping-content>#shopping-menu>ul>li>a>div{
+	position: relative;
+}
+.shopping-content>#shopping-menu>ul>li>a>div>i{
+	position: absolute;
+	top: 16px;
+	left: 4px;
+	color: #fff;
+}
+.shopping-content>#shopping-menu>ul>li>a>.button-left>i{
+	left: 0px;
+}
+.shopping-content>#shopping-menu>ul>li>a>.radius>a>ul{
+	width: 296px;
+	height: 30px;
+	background: red;
+}
+
 .shopping-content>#shopping-menu>.shopping-menu-list{
 	border-top: 1px solid #FFAC13;
 }
@@ -1294,11 +1410,18 @@ ul{
 	box-shadow:0px 15px 30px rgba(0,0,0,0.1);
 	transition: all .2s linear;
 }
+.shopping-content>#shopping-menu>ul:hover>li>a>div{
+	background: #B0B0B0;
+	transition: all 0.5s linear;
+}
+.shopping-content>#shopping-menu>ul>li>a>div:hover{
+	background: #757575;
+	transition: all 0.5s linear;
 
-
+}
 /*视频*/
 .shopping-video{
-	width: 1182px;
+	width: 1226px;
 	height: 343px;
 	background:#F5F5F5;
 	margin-left: 42px;
@@ -1306,7 +1429,7 @@ ul{
 }
 
 .shopping-video>.title-six{
-	width: 1182px;
+	width: 1226px;
 	height: 58px;
 	background: #F5F5F5;
 	/*margin-left: 42px;*/
@@ -1333,7 +1456,7 @@ ul{
 	height: 285px;
 }
 .shopping-video>ul>li{
-	width:285px;
+	width:296px;
 	height:285px;
 	background:#fff;
 	float:left;
@@ -1342,7 +1465,7 @@ ul{
 }
 .shopping-video>ul>li>a>img{
 	display: inline-block;
-	width: 285px;
+	width: 296px;
 	height: 180px;
 
 }
@@ -1504,6 +1627,9 @@ ul{
 	float:left;
 	display:block;
 	
+}
+#finally>#container>.list>ul>li>a:hover{
+	color: #FF6700;
 }
 #finally>#container>.list>ul{
 	width: 750px;
